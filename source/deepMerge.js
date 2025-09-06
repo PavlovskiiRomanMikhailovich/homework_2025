@@ -16,7 +16,7 @@
  * );
  * // => { user: { name: "Alice", age: 30 } }
  */
-function deepMerge(source, target) {
+const deepMerge = (source, target) => {
     if (!target || typeof target !== "object"){
         if (source === undefined || source === null) return {};
 
